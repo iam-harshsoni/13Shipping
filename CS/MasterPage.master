@@ -1,0 +1,333 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="CS_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!-- Required meta tags -->
+    <title>
+        13 Shipping & Logistics - Leading Logistics Service Provider
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="keywords"
+        content="Digebiz Responsive web template, Bootstrap Web Templates" />
+
+    <link href="//fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- Template CSS -->
+
+ 
+     <link href="Images/13SLfavicon.ico" rel="icon" />
+     
+    <link rel="stylesheet" href="Temp/assets/css/style-starter.css" />
+    
+
+
+    <style>
+        .textstyle {
+            background: red;
+            border: 0;
+            padding: 10px 24px;
+            color: #fff;
+            transition: 0.4s;
+            border-radius: 50px;
+        }
+
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            left: 40px;
+            /*right:13px;*/
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        .my-float {
+            margin-top: 16px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <!--header-->
+    <header id="site-header" class="fixed-top" style="height: 130px">
+        <!-- //top header -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke px-0 py-lg-0">
+                <%-- <h1><a class="navbar-brand" href="index.html">Dige<span class="sub-logo">b</span>iz</span>
+                </a></h1>--%>
+                <a class="navbar-brand" href="Home" id="LogoImgLight">
+                    <img src="Images/LogoWhite.png" style="width: 85%; margin-top: 7%;" /></a>
+                <a class="navbar-brand" href="Home" id="LogoImgDark" style="display: none">
+                    <img src="Images/Logo.png" style="width: 85%" /></a>
+
+                <%--<img src="Images/2.png" style="width:100%"/></a>--%>
+                <!-- if logo is image enable this   
+    <a class="navbar-brand" href="#index.html">
+        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+    </a> -->
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <asp:ContentPlaceHolder ID="Menu" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                    <div class="top-righthny-buttton">
+                        <a class="btn btn-style btn-white mr-lg-5" href="Contact">Get In Touch <span class="fa fa-long-arrow-right ml-3" aria-hidden="true"></span></a>
+                    </div>
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    <!--/header-->
+
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+
+    <!-- footer -->
+    <section class="w3l-footer-29-main">
+        <div class="footer-29 py-5">
+            <div class="container py-lg-3">
+                <div class="row footer-top-29">
+                    <div class="col-lg-4 footer-list-29 footer-2 mt-lg-0 mt-md-5 mt-4 pr-lg-5">
+                        <%--<div class="footer-logo mb-3">
+                            <h2><a class="navbar-brand" href="Home">--%>
+                        <%--<img src="Images/LogoWhite.png" style="width: 40%" /> </a>--%>
+                        <%--  <a class="navbar-brand" href="index.html">
+                 13 <span class="sub-logo"> Shipping & Logistics</span> </span>
+                </a>
+                            </h2>
+                        </div>--%>
+                        <p style="text-align: justify">
+                            13 Shipping &amp; Logistics was established in 2022 and today is one of the prominent Shipping
+and Logistics solution provider. We have an established presence at all the major ports of
+Gujarat, India - Kandla, Mundra, and Pipavav.
+                        </p>
+                    </div>
+                    <div class="col-lg-8 footerw3l-right pl-lg-5">
+                        <div class="row no-gutters">
+                            <div class="col-lg-6 col-sm-6 footer-list-29 footer-2 mt-lg-0 mt-md-5 mt-4" style="text-align: center">
+                                <h6 class="footer-title-29">Want to work with us?</h6>
+                                <p>Use This Email</p>
+                                <p class="mt-2"><a href="mailto:info@13shipping.com">info@13shipping.com</a></p>
+                            </div>
+
+                            <%-- <div class="col-lg-4 col-sm-6 footer-list-29 footer-2 mt-lg-0 mt-md-5 mt-4">
+                                <h6 class="footer-title-29">Find us on social media.</h6>
+                                <p class="mt-2">Social Media</p>
+
+                                <div class="main-social-footer-29 mt-2">
+                                    <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+                                    <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+                                    <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+                                </div>
+                            </div>--%>
+                            <div class="col-lg-6 col-sm-6 footer-list-29 footer-2 mt-lg-0 mt-md-5 mt-4" style="text-align: center">
+                                <h6 class="footer-title-29">Quick Links</h6>
+                                <ul>
+                                     
+                                    <li><a href="Home">Home</a></li>
+                                    <li><a href="AboutUs">About Us</a></li>
+
+                                    <li><a href="Services">Services</a></li>
+                                    <li><a href="Contact">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <%--   <div class="row no-gutters mt-5">
+           <div class="col-lg-4 col-sm-6 footer-list-29 footer-2 mt-lg-0 mt-md-5 mt-4">
+                <ul>
+                  <h6 class="footer-title-29">Company</h6>
+                  <li><a href="#careers"> Careers</a></li>
+                  <li><a href="#news">News & Media</a></li>
+                  <li><a href="contact.html">Contact us</a></li>
+                </ul>
+              </div>--%>
+                        <%-- <div class="col-lg-4 col-sm-6 footer-list-29 footer-2 mt-lg-0 mt-md-5 mt-4">
+                <h6 class="footer-title-29">Quick Links</h6>
+                <ul>
+                      <li><a href="Home"> Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                
+                  <li><a href="services.html">Services</a></li>
+                    <li><a href="Contact"> Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-sm-6 footer-list-29 footer-2 mt-lg-0 mt-md-5 mt-4">
+                <h6 class="footer-title-29">Quick Links</h6>
+                <ul>
+                  <li><a href="#terms">Terms of service</a></li>
+                  <li><a href="#privacy"> Privacy policy</a></li>
+
+                  <li><a href="#support"> Support</a></li>
+                </ul>
+              </div>
+            </div>--%>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //footer -->
+    <!-- copyright -->
+    <section class="w3l-copyright">
+        <div class="container">
+            <div class="bottom-copies text-center">
+                <p class=" copy-footer-29">
+                    © 2022 13 S&L. Made with <span class="fa fa-heart" aria-hidden="true"></span>love
+         Developed by <span style="color: #1769ff"><a href="https://h2msolution.com" target="_blank">H2M IT SOLUTIONS</a> </span>Design by<a href="https://w3layouts.com/" target="_blank">
+            W3layouts</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            &#10548;
+        </button>
+        <a href="https://api.whatsapp.com/send?phone=919408999995&text=Hi%20there!%20I%27m%20interested%20to%20know%20more%20about%2013%20Shipping%26Logistics." class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- /move top -->
+    </section>
+    <!-- //copyright -->
+    <!--//footer-->
+    <!-- Template JavaScript -->
+    <script src="Temp/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="Temp/assets/js/theme-change.js"></script>
+    <script src="Temp/assets/js/owl.carousel.js"></script>
+    <!-- owl carousel -->
+    <!-- script for tesimonials carousel slider -->
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo1").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 2,
+                        nav: false,
+                        loop: false
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //script for tesimonials carousel slider -->
+    <!-- stats number counter-->
+    <script src="Temp/assets/js/jquery.waypoints.min.js"></script>
+    <script src="Temp/assets/js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+    <!-- //stats number counter -->
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- disable body scroll which navbar is in active -->
+
+    <!--/MENU-JS-->
+    <script>
+
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+                $("#LogoImgLight").hide();
+                $("#LogoImgDark").show();
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+                $("#LogoImgLight").show();
+                $("#LogoImgDark").hide();
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!--//MENU-JS-->
+    <script src="Temp/assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
